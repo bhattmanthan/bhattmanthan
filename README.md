@@ -1,16 +1,13 @@
-## Hi there 👋
+Cybersecurity student focused on ethical hacking, bug bounty fundamentals, and hands-on security learning.
 
-<!--
-**bhattmanthan/bhattmanthan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Current areas of practice:
+- Web application security (IDOR, XSS)
+- CTF-style challenges and lab-based learning
+- Introductory reverse engineering and binary analysis
 
-Here are some ideas to get you started:
+I prefer structured learning, minimal tooling, and understanding systems rather than copying solutions.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Selected work:
+- SecLabs — structured security lab artifacts and analysis reports
+
+Learning is ongoing and intentionally scoped.
