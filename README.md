@@ -7,7 +7,4 @@ Current areas of practice:
 
 I prefer structured learning, minimal tooling, and understanding systems rather than copying solutions.
 
-Selected work:
-- SecLabs — structured security lab artifacts and analysis reports
-
 Learning is ongoing and intentionally scoped.
