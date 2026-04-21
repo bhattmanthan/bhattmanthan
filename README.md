@@ -48,7 +48,7 @@ My work lives at the intersection of offensive security and systems thinking: bu
 
 ```
 Languages       Python · Bash · C · C++ · Java
-Security Tools  Nmap · Burp Suite · Metasploit · Wireshark · Gobuster · Netcat · Socat
+Security Tools  Nmap · Burp Suite · Metasploit · Wireshark · Gobuster · Netcat · CyberChef
 Domains         Penetration Testing · Web App Security · Post-Exploitation
                 Privilege Escalation · Network Enumeration · Container Security
 Web Vulns       SQLi · XSS · IDOR · OWASP Top 10
@@ -66,9 +66,10 @@ Web Vulns       SQLi · XSS · IDOR · OWASP Top 10
 
 ## Currently
 
-- Building and refining L.E.A.P. v1.1.0
-- Competing in CTFs and expanding into forensics and binary analysis
+- Deepening knowledge of OWASP Top 10
+- Building and refinin L.E.A.P. v1.1.0
+- Competing in CTFs and expanding into reverse engineering and malware development
 
 ---
 
-**[LinkedIn](https://linkedin.com/in/bhattmanthan1) · [Portfolio](https://bhattmanthan.github.io) · bhattmanthan8@gmail.com**
+**[LinkedIn](https://linkedin.com/in/bhattmanthan1) · [Portfolio](https://bhattmanthan.github.io) · bhattmanthan8@gmail.com · [HTB](https://profile.hackthebox.com/profile/019daed7-4ab2-7157-8582-b105e8d0a725) · [THM](https://tryhackme.com/p/antisocialstare)**
