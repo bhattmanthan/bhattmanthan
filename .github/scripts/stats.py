@@ -1,7 +1,10 @@
-"""Render assets/stats.svg from public GitHub data. Needs `gh` + GH_TOKEN. Public data only, so local and CI output match."""
+"""Render assets/stats.svg. Needs `gh` + GH_TOKEN. INCLUDE_PRIVATE=1 (token needs repo + read:user) also counts private repos and commits; only aggregates are drawn."""
 import json, os, subprocess, sys
 from html import escape
 
+PRIV = os.environ.get("INCLUDE_PRIVATE") == "1"
+SCOPE = "all" if PRIV else "public"
+NOTE = "public + private counts" if PRIV else "public data"
 USER = os.environ.get("GITHUB_USER") or sys.argv[1]
 OUT = os.path.join(os.path.dirname(__file__), "..", "..", "assets", "stats.svg")
 COLORS = {"Shell": "#89e051", "JavaScript": "#f1e05a", "Python": "#3572A5", "C": "#555555", "C++": "#f34b7d",
@@ -11,9 +14,9 @@ def gh(*args):
     return json.loads(subprocess.run(["gh", *args], capture_output=True, text=True, check=True).stdout)
 
 q = """query($u:String!){user(login:$u){followers{totalCount}
- repositories(privacy:PUBLIC,ownerAffiliations:OWNER,isFork:false,first:100){totalCount nodes{name stargazerCount}}
- contributionsCollection{totalCommitContributions totalPullRequestContributions totalIssueContributions}}}"""
-u = gh("api", "graphql", "-f", f"query={q}", "-F", f"u={USER}")["data"]["user"]
+ repositories(%s ownerAffiliations:OWNER,isFork:false,first:100){totalCount nodes{name stargazerCount}}
+ contributionsCollection{restrictedContributionsCount totalCommitContributions totalPullRequestContributions totalIssueContributions}}}"""
+u = gh("api", "graphql", "-f", "query=" + q % ("" if PRIV else "privacy:PUBLIC,"), "-F", f"u={USER}")["data"]["user"]
 repos = u["repositories"]["nodes"]
 stars = sum(r["stargazerCount"] for r in repos)
 langs = {}
@@ -23,8 +26,8 @@ for r in repos:
 total = sum(langs.values()) or 1
 top = sorted(langs.items(), key=lambda kv: -kv[1])[:6]
 cc = u["contributionsCollection"]
-tiles = [("PUBLIC REPOS", u["repositories"]["totalCount"]), ("STARS", stars),
-         ("COMMITS · 12 MO", cc["totalCommitContributions"]), ("PULL REQUESTS", cc["totalPullRequestContributions"])]
+tiles = [("REPOS" if PRIV else "PUBLIC REPOS", u["repositories"]["totalCount"]), ("STARS", stars),
+         ("COMMITS · 12 MO", cc["totalCommitContributions"] + (cc["restrictedContributionsCount"] if PRIV else 0)), ("PULL REQUESTS", cc["totalPullRequestContributions"])]
 
 W, H = 900, 250
 FONT = "ui-monospace,'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace"
@@ -36,7 +39,7 @@ for i, (label, val) in enumerate(tiles):
     o.append(f'<rect x="{x}" y="{y}" width="176" height="80" rx="10" fill="#161b22" stroke="#30363d"/>')
     o.append(f'<text x="{x+16}" y="{y+44}" fill="#58a6ff" font-size="32" font-weight="700">{val}</text>')
     o.append(f'<text x="{x+16}" y="{y+66}" fill="#8b949e" font-size="11">{label}</text>')
-o.append('<text x="440" y="82" fill="#8b949e" font-size="12">TOP LANGUAGES · by bytes in public repos</text>')
+o.append(f'<text x="440" y="82" fill="#8b949e" font-size="12">TOP LANGUAGES · by bytes in {SCOPE} repos</text>')
 bx, bw = 440, 430
 x = bx
 o.append(f'<clipPath id="bar"><rect x="{bx}" y="96" width="{bw}" height="14" rx="7"/></clipPath><g clip-path="url(#bar)">')
@@ -50,6 +53,6 @@ for i, (k, v) in enumerate(top):
     o.append(f'<circle cx="{lx+6}" cy="{ly-4}" r="5" fill="{COLORS.get(k, "#8b949e")}"/>')
     o.append(f'<text x="{lx+20}" y="{ly}" fill="#c9d1d9" font-size="13">{escape(k)}</text>')
     o.append(f'<text x="{lx+200}" y="{ly}" fill="#8b949e" font-size="13" text-anchor="end">{100*v/total:.1f}%</text>')
-o.append(f'<text x="{W-30}" y="{H-14}" fill="#484f58" font-size="10" text-anchor="end">public data · auto-updated by Actions</text></svg>')
+o.append(f'<text x="{W-30}" y="{H-14}" fill="#484f58" font-size="10" text-anchor="end">{NOTE} · auto-updated by Actions</text></svg>')
 open(OUT, "w").write("\n".join(o))
 print("wrote", os.path.abspath(OUT), tiles, top[:3])

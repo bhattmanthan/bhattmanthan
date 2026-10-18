@@ -14,7 +14,8 @@ jobs:
       - uses: actions/checkout@v4
       - run: python3 .github/scripts/stats.py
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.STATS_TOKEN || github.token }}
+          INCLUDE_PRIVATE: ${{ secrets.STATS_TOKEN && '1' || '0' }}
           GITHUB_USER: ${{ github.repository_owner }}
       - name: Commit stats
         run: |
