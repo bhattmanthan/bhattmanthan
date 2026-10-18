@@ -1,38 +1,113 @@
 <div align="center">
 
-<!-- Typing SVG -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Hey%2C+I'm+Manthan+Bhatt+%F0%9F%91%8B;Offensive+Security+%7C+Red+Teamer;B.Tech+CSE+%40+Nirma+University;I+break+things+to+understand+them)](https://git.io/typing-svg)
+<img src="assets/header.svg" alt="manthan@arch:~$ whoami — Manthan Bhatt, offensive security, CSE @ Nirma '28, Technical Head of the Cyber Security Club" width="100%" />
 
-<img src="https://komarev.com/ghpvc/?username=bhattmanthan&style=for-the-badge&color=58a6ff&label=PROFILE+VIEWS" />
+<br/>
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-portfolio.bhattmanthan.dev-58a6ff?style=for-the-badge&logo=googlechrome&logoColor=white)](https://portfolio.bhattmanthan.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-bhattmanthan1-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bhattmanthan1)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-antisocialstare-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/antisocialstare)
+[![Followers](https://img.shields.io/github/followers/bhattmanthan?style=for-the-badge&logo=github&color=161b22&labelColor=0d1117)](https://github.com/bhattmanthan?tab=followers)
+[![Email](https://img.shields.io/badge/Email-bhattmanthan8%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bhattmanthan8@gmail.com)
+
+**Third-year CSE student who built L.E.A.P., competes in CTFs, and documents exactly why things broke.**<br/>
+Looking for **penetration testing, vulnerability research and security engineering** roles, remote or on-site.
 
 </div>
 
 ---
 
-## `$ whoami`
+<div align="center">
 
-```
-$ nmap -sC -sV -p- manthan.bhatt
+<img src="assets/killchain.svg" alt="Kill chain: recon, initial access, privilege escalation, C2, exfiltration, each mapped to a project I built" width="100%" />
 
-Starting Nmap 7.94 ( https://nmap.org )
-Nmap scan report for manthan.bhatt (AntisocialStare)
-Host is up (0.0001s latency).
+</div>
 
-PORT      STATE     SERVICE         VERSION
-2028/tcp  open      education       B.Tech CSE @ Nirma University
-1337/tcp  open      offensive-sec   Penetration Testing | Red Teaming | Post-Exploitation
-2600/tcp  open      ctf-rank        TryHackMe top 5% global | AWS CTF 125th global / 35th regional
-8080/tcp  filtered  bug-bounty      Bugcrowd active | HackWithIndiaa VDP (P2/P3 certified)
+---
 
-Host script results:
-|_motd: I break things to understand them — then document exactly why they broke.
-|_currently-running:
-|   [+] building   L.E.A.P. v1.1.0 — Linux post-exploitation framework
-|   [+] building   Homelab Dashboard (private) — SOC dashboard for a vuln-app fleet
-|   [+] active     RegSentinel (private) — security layer lead, SuRaksha Hackathon
-|   [~] testing    ExpenseFlow — OWASP Top 10 -> malware analysis -> C2 capture chain
+## 📂 Featured Projects
 
-Nmap done: 1 IP address (1 host up) scanned in 0.42 seconds
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [L.E.A.P.](https://github.com/bhattmanthan/LEAP) `v1.1.0`
+Modular Linux post-exploitation framework in pure Bash: recon, enumeration, privesc vectoring, container-escape detection, in-memory loot staging and C2 exfiltration.<br/>
+`Bash` `Linux` `Red Team`
+
+</td>
+<td width="50%" valign="top">
+
+### [ExpenseFlow](https://github.com/bhattmanthan/expenseflow)
+Intentionally vulnerable corporate expense app covering several OWASP Top 10 categories, chained into malware analysis and C2 traffic capture.<br/>
+`Node.js` `Express` `PostgreSQL` `Docker`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [resolve-prep](https://github.com/bhattmanthan/resolve-prep)
+One command that finds the clips DaVinci Resolve Free on Linux can't decode and transcodes only those to DNxHR, then verifies the result.<br/>
+`Bash` `FFmpeg`
+
+</td>
+<td width="50%" valign="top">
+
+### RegSentinel · *private*
+Agentic regulatory-compliance system for Canara Bank's SuRaksha Hackathon. I led the security layer: hash-chained audit log, scoped per-agent JWTs, prompt-injection defenses.<br/>
+`Next.js` `FastAPI` `LangGraph` `PostgreSQL`
+
+</td>
+</tr>
+</table>
+
+> 🔒 Also building a **homelab** (Wazuh, Sliver C2, vulnerable-app fleet, SOC dashboard) that stays private until it's sanitized for public view.
+
+---
+
+## 🏆 CTFs, Bounties & Community
+
+| | |
+|---|---|
+| 🥈 **Adani Innovation Mindstorm 2026** · CTF (Maya Jaal) | **1st Runner-Up** (team), national level, ₹3,00,000 prize · [Nirma CSE announcement](https://cse.nirmauni.ac.in/about/achievements/) |
+| 🌍 **AWS Skills to Job CTF** (SANS) | **125th global / 35th regional** · 20/37 challenges solved · 6-month SANS SkillQuest access |
+| 🐛 **HackWithIndiaa VDP** | Certified **P2/P3** finding with a full written report · also active on Bugcrowd |
+| 🎯 **TryHackMe** | Top **5%** · 14 badges · Jr. Penetration Tester path complete |
+| 🎤 **Nirma Cyber Security Club** | **Technical Head** · live attack demos at HackVerse (Episode 3) |
+
+---
+
+## 📊 By the numbers
+
+<div align="center">
+
+<img src="assets/stats.svg" alt="Public GitHub stats: repos, stars, commits and pull requests in the last 12 months, top languages" width="100%" />
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bhattmanthan/bhattmanthan/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bhattmanthan/bhattmanthan/output/snake.svg" />
+  <img alt="Contribution graph eaten by a snake" src="https://raw.githubusercontent.com/bhattmanthan/bhattmanthan/output/snake.svg" width="100%" />
+</picture>
+
+</div>
+
+---
+
+## 🧭 Now → Next
+
+```text
+NOW    ▸ ExpenseFlow attack chain   OWASP Top 10 → malware analysis → C2 capture
+       ▸ RegSentinel                audit-log + prompt-injection defense layers
+       ▸ Homelab                    Wazuh + Sliver + vulnerable-app fleet
+
+CLOUD  ▸ AWS, hands-on              fundamentals solid, now building real things on the free tier
+         IAM · VPC · Terraform · Lambda · CI/CD with OIDC · CloudTrail, torn down after every lab
+
+NEXT   ▸ DevSecOps, hands-on        secrets scanning · SAST/SCA · container + IaC scanning
+         supply-chain signing · policy-as-code · K8s · runtime detection
 ```
 
 ---
@@ -41,97 +116,47 @@ Nmap done: 1 IP address (1 host up) scanned in 0.42 seconds
 
 <div align="center">
 
-**Languages & Scripting**
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-hands--on-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=flat-square&logo=archlinux&logoColor=white)
+![Tailscale](https://img.shields.io/badge/Tailscale-242424?style=flat-square&logo=tailscale&logoColor=white)
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-
-**Security Tooling**
-
-![Nmap](https://img.shields.io/badge/Nmap-000000?style=for-the-badge&logo=nmap&logoColor=white)
-![BurpSuite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
-![ffuf](https://img.shields.io/badge/ffuf-EF3E36?style=for-the-badge&logoColor=white)
-![Netcat](https://img.shields.io/badge/Netcat-000000?style=for-the-badge&logoColor=white)
-![Sliver](https://img.shields.io/badge/Sliver_C2-6E44FF?style=for-the-badge&logoColor=white)
-![Wazuh](https://img.shields.io/badge/Wazuh-3AAFDA?style=for-the-badge&logoColor=white)
-
-**Backend & Infra**
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Tailscale](https://img.shields.io/badge/Tailscale-242424?style=for-the-badge&logo=tailscale&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-000000?style=flat-square&logoColor=white)
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square&logo=burpsuite&logoColor=white)
+![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
+![ffuf](https://img.shields.io/badge/ffuf-EF3E36?style=flat-square&logoColor=white)
+![Sliver](https://img.shields.io/badge/Sliver_C2-6E44FF?style=flat-square&logoColor=white)
+![Wazuh](https://img.shields.io/badge/Wazuh-3AAFDA?style=flat-square&logoColor=white)
 
 </div>
 
----
+<details>
+<summary><b>Full skill list</b></summary>
 
-## 📂 Featured Projects
-
-| Project | What it does | Stack |
-|---|---|---|
-| **[L.E.A.P.](https://github.com/bhattmanthan/LEAP)** | Modular Bash post-exploitation framework — enumeration, privesc vectoring, container escape detection, in-memory C2 exfiltration | Bash |
-| **RegSentinel** *(private)* | Agentic regulatory compliance system for SuRaksha Hackathon (Canara Bank) — sole security-layer lead: fingerprinting, hash-chained audit log, scoped JWTs, prompt-injection defenses | Next.js, FastAPI, LangGraph, PostgreSQL + pgvector |
-| **Homelab Dashboard** *(private)* | Self-hosted SOC dashboard tracking a vulnerable-app fleet, test-coverage logs, and C2 session history, with a Vue directive enforcing sanitization before public display | Node/Express, MySQL, MongoDB, Vue.js |
-| **ExpenseFlow** | Intentionally vulnerable app chaining OWASP Top 10 → malware analysis → C2 traffic capture, built for EHVA coursework *(built, testing in progress)* | Node.js, Express, PostgreSQL |
-
----
-
-## 🏆 CTF & Achievements
-
-**AWS Skills to Job CTF (SANS)** — Ranked **125th globally** / **35th regional** · 20/37 challenges solved (Web Offensive, Forensics, Mixed Offensive) · Awarded 6-month SANS SkillQuest access
-
-**TryHackMe** — Top **5% globally** · 14 badges · Jr. Penetration Tester path complete (Metasploit, Burp Suite, network exploitation, Linux privesc)
-
-**Bug Bounty / VDP** — Active on Bugcrowd; certified P2/P3 finding through the HackWithIndiaa Vulnerability Disclosure Program
-
----
-
-## Skills
-
-```
-Domains         Penetration Testing · Web App Security · Post-Exploitation
-                Privilege Escalation · Network Enumeration · Container Security
-Web Vulns       SQLi · XSS · IDOR · SSRF · CORS Misconfig · OWASP Top 10
-Recon           subfinder · amass · httpx · katana · ffuf
+```text
+Domains    Penetration Testing · Web App Security · Post-Exploitation · Privilege Escalation
+           Network Enumeration · Container Security · Vulnerability Assessment
+Web Vulns  SQLi · XSS · IDOR · SSRF · CORS Misconfig · OWASP Top 10
+Recon      subfinder · amass · httpx · katana · ffuf · Gobuster
 ```
 
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-<img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=bhattmanthan&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9"/>
-<img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=bhattmanthan&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9"/>
-</div>
-
-<div align="center">
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=bhattmanthan&theme=dark&hide_border=true&background=0d1117&stroke=58a6ff&ring=58a6ff&fire=ff6e6e&currStreakLabel=c9d1d9)](https://git.io/streak-stats)
-
-</div>
-
----
-
-## Currently
-
-- Testing ExpenseFlow's full attack chain end-to-end before EHVA submission
-- Building out RegSentinel's audit-log and prompt-injection defense layers
-- Expanding the homelab dashboard's telemetry modules
-- Preparing for security engineering internship interviews
+</details>
 
 ---
 
 <div align="center">
 
-**[LinkedIn](https://linkedin.com/in/bhattmanthan1) · [Portfolio](https://bhattmanthan.github.io) · bhattmanthan8@gmail.com · [HTB](https://profile.hackthebox.com/profile/019daed7-4ab2-7157-8582-b105e8d0a725) · [THM](https://tryhackme.com/p/antisocialstare)**
+*I break things to understand them, then document exactly why they broke.*<br/>
+*Credentials and details: [portfolio.bhattmanthan.dev](https://portfolio.bhattmanthan.dev)*
 
 </div>
