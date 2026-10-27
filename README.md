@@ -70,7 +70,7 @@ Agentic regulatory-compliance system for Canara Bank's SuRaksha Hackathon. I led
 
 | | |
 |---|---|
-| 🥈 **Adani Innovation Mindstorm 2026** · CTF (Maya Jaal) | **1st Runner-Up** (team), national level, ₹3,00,000 prize · [Nirma CSE announcement](https://cse.nirmauni.ac.in/about/achievements/) |
+| 🥈 **Adani Innovation Mindstorm 2026** · CTF (Maya Jaal) | **1st Runner-Up** (team), national level, ₹3,00,000 prize |
 | 🌍 **AWS Skills to Job CTF** (SANS) | **125th global / 35th regional** · 20/37 challenges solved · 6-month SANS SkillQuest access |
 | 🐛 **HackWithIndiaa VDP** | Certified **P2/P3** finding with a full written report · also active on Bugcrowd |
 | 🎯 **TryHackMe** | Top **5%** · 14 badges · Jr. Penetration Tester path complete |
